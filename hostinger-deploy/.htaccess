@@ -1,0 +1,8 @@
+# Rewrite rules for Hostinger
+RewriteEngine On
+
+# Handle API requests
+RewriteRule ^api/(.*)$ api.php/$1 [L,QSA]
+
+# Redirect root to index.html
+RewriteRule ^$ index.html [L]
